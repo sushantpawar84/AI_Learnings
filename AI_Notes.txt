@@ -1,6 +1,12 @@
 Concepts of LLM and AI: 
 NLP -> ML -> LLM -> Gen AI
 
+Some Python framework and libraries:
+1. Torch framework
+2. Transformers lib
+3. Datasets lib
+4. Accelerate lib
+5. peft - Parameter-Efficient-Fine-Tunning Lib
 
 Pre Training and Fine Tunning. 
 First stage of LLM is called Pretraining. Ex. GPT3 model is a pretrained model which is capable of text completion

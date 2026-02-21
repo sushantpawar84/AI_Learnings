@@ -1,0 +1,15 @@
+Concepts of LLM and AI: 
+NLP -> ML -> LLM -> Gen AI
+
+
+Pre Training and Fine Tunning. 
+First stage of LLM is called Pretraining. Ex. GPT3 model is a pretrained model which is capable of text completion
+After pretraining, we can further train LLM which is called FINETUNNING. 
+FINETUNNING are of 2 categories:
+Intruction Finetunning
+Finetunning for Classification Tasks
+Finetunning happens on labelled data. Pre Training happens on raw data. 
+
+Transformers:
+--------------
+Transformer Achitechture = Deep neural network architecture introduced in 2017

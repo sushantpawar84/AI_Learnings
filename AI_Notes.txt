@@ -19,3 +19,20 @@ Finetunning happens on labelled data. Pre Training happens on raw data.
 Transformers:
 --------------
 Transformer Achitechture = Deep neural network architecture introduced in 2017
+Steps of Transformer Architecture:
+1. Input Text
+2. Tokenization of the text
+3. Encoder - Vector Embedding of those Tokens
+4. Embedding
+5. Partial Text
+6. Preprocessing Steps - I/p text is prepared for decoder
+7. Decoder - Generates translated - one word at a time
+8. Output Text with full result.
+
+Architecture is mainly have 2 block:
+1. Encoder - Encodes i/p  text  into  vectors
+2. Decoder -  Generates o/p text from encoded vectors.
+
+Self Attention Mechanism: Key part of transformer. Allows model to weigh importance of different words/tokens relative to each other.
+Enable models to capture long range dependencies.
+

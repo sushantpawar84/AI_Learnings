@@ -6,11 +6,10 @@ Run with: python -m pytest tests/ or python -m unittest discover -s tests -p "te
 import unittest
 import tempfile
 from pathlib import Path
-from unittest.mock import Mock, patch, MagicMock
 from datetime import datetime
 
 from svn2git_tool.core import Config
-from svn2git_tool.utils import SVNFetchError, GitPushError, retry_with_backoff, FailureMode, classify_error
+from svn2git_tool.utils import SVNFetchError, retry_with_backoff, FailureMode, classify_error
 from svn2git_tool.core import StateManager, MigrationStatus
 from svn2git_tool.adapters import SVNRevisionMetadata
 

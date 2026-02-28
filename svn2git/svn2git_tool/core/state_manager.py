@@ -6,7 +6,7 @@ Tracks migration progress, checkpoints, and commit mappings using SQLite.
 import sqlite3
 from datetime import datetime
 from pathlib import Path
-from typing import List, Optional, Tuple, Dict, Any
+from typing import List, Optional, Dict, Any
 from enum import Enum
 from svn2git_tool.utils import get_logger
 

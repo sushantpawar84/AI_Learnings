@@ -11,9 +11,9 @@ A production-grade tool for migrating SVN repositories to Git with:
 
 __version__ = "1.0.0"
 __author__ = "SVN to Git Migration Team"
-__email__ = "migration@example.com"
+__email__ = "sushant789@gmail.com"
 
-from .main import main
+from svn2git_tool.main import main
 
 __all__ = ["main"]
 

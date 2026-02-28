@@ -10,7 +10,6 @@ Usage:
 
 import sys
 import argparse
-import logging
 from pathlib import Path
 from svn2git_tool.utils import LoggerManager, get_logger
 from svn2git_tool.core import Config, ConfigError, MigrationOrchestrator

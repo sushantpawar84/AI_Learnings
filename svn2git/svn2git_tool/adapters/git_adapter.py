@@ -3,11 +3,9 @@ Git repository adapter for creating commits and pushing to GitHub.
 Handles authentication and batch commit operations.
 """
 
-import os
 import shutil
 from pathlib import Path
-from typing import Optional, Dict, Any, List
-from datetime import datetime
+from typing import Optional, Dict
 import git
 from svn2git_tool.utils import get_logger
 from svn2git_tool.utils import GitAuthenticationError, GitPushError, retry_with_backoff

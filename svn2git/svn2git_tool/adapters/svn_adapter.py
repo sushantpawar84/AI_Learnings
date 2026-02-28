@@ -5,8 +5,7 @@ Handles authentication and incremental revision fetching.
 
 import subprocess
 import xml.etree.ElementTree as ET
-from datetime import datetime
-from typing import List, Dict, Any, Optional, Tuple
+from typing import List, Dict, Any, Optional
 from svn2git_tool.utils import get_logger
 from svn2git_tool.utils import SVNConnectionError, SVNFetchError, retry_with_backoff
 

@@ -4,19 +4,16 @@ Handles batch processing, checkpoints, timeout prevention, and error recovery.
 """
 
 import time
-import signal
-from typing import Optional, List
-from datetime import datetime, timedelta
 from pathlib import Path
 from svn2git_tool.utils import get_logger
 from svn2git_tool.core import Config
-from svn2git_tool.core import StateManager, MigrationStatus
+from svn2git_tool.core import StateManager
 from svn2git_tool.adapters import SVNAdapter, SVNRevisionMetadata
 from svn2git_tool.adapters import GitAdapter
 from svn2git_tool.utils import (
     MigrationError, SVNFetchError, GitPushError, TimeoutError as MigrationTimeoutError,
-    handle_transient_error, handle_permanent_error, handle_timeout_error,
-    retry_with_backoff, classify_error, FailureMode
+    handle_timeout_error,
+    classify_error, FailureMode
 )
 
 logger = get_logger(__name__)

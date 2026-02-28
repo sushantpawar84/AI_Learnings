@@ -16,8 +16,9 @@ Intruction Finetunning
 Finetunning for Classification Tasks
 Finetunning happens on labelled data. Pre Training happens on raw data. 
 
+======================
 Transformers:
---------------
+======================
 Transformer Achitechture = Deep neural network architecture introduced in 2017
 Steps of Transformer Architecture:
 1. Input Text
@@ -35,4 +36,23 @@ Architecture is mainly have 2 block:
 
 Self Attention Mechanism: Key part of transformer. Allows model to weigh importance of different words/tokens relative to each other.
 Enable models to capture long range dependencies.
+BERT = Bidirectional Encoder Representation from Transformers - This doesn't have Decoder, Only Encoder
+GPT = Generative pretrained Transformer - This doesn't have Encoder, only have Decoder
+
+====================
+Transformer vs LLM
+====================
+- Not all transformers are LLMs
+- Transformers can be used for other tasks like Computer Vision
+- Not all LLMs are Transformers
+- LLMs can be based on recurrent or convolutional architectures as well
+- LLMs can be used to build Long Short Term Memory Networks for Analytical tasks
+
+======================
+Closer Look at GPT
+======================
+Zero Shot - Ability to generalize to completely unseen task without any prior specific examples. Without any CONTEXT
+Few Shot -Learning from a minimum number of examples which the user provides as input. With CONTEXT
+
+
 

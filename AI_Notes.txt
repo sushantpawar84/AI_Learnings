@@ -1,6 +1,6 @@
 Concepts of LLM and AI: 
 NLP -> ML -> LLM -> Gen AI
-
+Use Case: SVN to GIT Migration - Migrate repository from SVN to Git which includes all the version history as well
 Some Python framework and libraries:
 1. Torch framework
 2. Transformers lib
@@ -54,5 +54,6 @@ Closer Look at GPT
 Zero Shot - Ability to generalize to completely unseen task without any prior specific examples. Without any CONTEXT
 Few Shot -Learning from a minimum number of examples which the user provides as input. With CONTEXT
 
+Token - is unit of text which model reads.
 
 

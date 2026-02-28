@@ -1,0 +1,31 @@
+# SVN to Git Migration Configuration File
+# All settings can be overridden by environment variables
+
+# SVN Repository Configuration
+svn_url: https://svn.example.com/project/trunk
+svn_username: ${SVN_USERNAME}  # Read from environment variable
+svn_password: ${SVN_PASSWORD}  # Read from environment variable
+
+# Git Repository Configuration
+git_url: https://github.com/myorg/myproject.git
+git_token: ${GITHUB_TOKEN}     # Read from environment variable
+git_author_name: SVN Migration Bot
+git_author_email: migration@example.com
+
+# Migration Settings
+batch_size: 50                  # Number of SVN revisions per batch
+batch_timeout_seconds: 300      # Timeout per batch (5 minutes)
+retry_attempts: 3               # Number of retry attempts for failures
+retry_backoff_base: 5           # Base backoff time in seconds (exponential)
+
+# Logging Configuration
+log_level: INFO                 # DEBUG, INFO, WARNING, ERROR
+log_dir: ./logs                 # Directory for log files
+
+# Database Configuration
+db_path: ./migration_state.db   # SQLite database for state tracking
+
+# Large File Handling
+large_file_threshold_mb: 100    # File size threshold for special handling
+extended_timeout_multiplier: 2.0  # Timeout multiplier for batches with large files
+

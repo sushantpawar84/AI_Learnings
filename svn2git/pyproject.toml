@@ -1,0 +1,76 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools-scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "svn2git-tool"
+version = "1.0.0"
+description = "A production-grade tool for migrating SVN repositories to Git with full version history"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "SVN to Git Migration Team", email = "migration@example.com"}
+]
+keywords = ["svn", "git", "migration", "version-control", "repository"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Version Control :: RCS",
+    "Topic :: System :: Distributed Computing",
+]
+
+dependencies = [
+    "python-dotenv>=1.0.0",
+    "gitpython>=3.1.43",
+    "pysvn>=1.9.21",
+    "requests>=2.31.0",
+    "pyyaml>=6.0.1",
+    "colorlog>=6.8.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/svn2git"
+"Bug Reports" = "https://github.com/yourusername/svn2git/issues"
+"Source" = "https://github.com/yourusername/svn2git"
+"Documentation" = "https://github.com/yourusername/svn2git/blob/main/README.md"
+
+[project.scripts]
+svn2git = "svn2git_tool.main:main"
+
+[tool.setuptools]
+packages = ["svn2git_tool", "svn2git_tool.core", "svn2git_tool.adapters", "svn2git_tool.utils", "tests"]
+
+[tool.black]
+line-length = 100
+target-version = ["py38", "py39", "py310", "py311"]
+
+[tool.flake8]
+max-line-length = 100
+extend-ignore = ["E203", "W503"]
+exclude = [".git", "__pycache__", "docs", ".venv", "build", "dist"]
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+
